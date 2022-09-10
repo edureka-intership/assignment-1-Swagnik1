@@ -1,0 +1,261 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width:  100%;
+    background-image: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.whole{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px auto 300px;
+    width: 100%;
+}
+
+aside {
+    background-color: #eee;
+    color: rgb(51, 51, 125);
+    grid-column-start: span 1;
+    margin: 0px 0px 0px 40px;
+    padding: 30px 200px 60px 40px;
+    height: 90vh;
+    width: 25%;
+    box-shadow: 1px 10px 20px #888888;
+
+}
+
+main {
+    background-color: #fffffc;
+    grid-column-start: span 2;
+    
+}
+
+footer {
+    height: 0%;
+    margin: 39rem 0px -300px 600px;
+    grid-column-start: span 3;
+}
+nav{
+    background-color: rgb(210, 37, 37);
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+h1{
+    margin-left: 20px;
+    margin-top: 50px;
+    color: rgb(51, 51, 125);
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.container1 h2{
+    font-size: 20px;
+    color: rgb(51, 51, 125);
+}
+
+select{
+    color: rgb(51, 51, 125);
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(51, 51, 125);;
+}
+
+
+
+.footerbuttons a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 30px 5px 20px 5px ;
+    padding: 5px 10px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 20%;
+}
+
+.footerbuttons a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+.container-2{
+    display: block;
+    background-color: #eee;
+    color: rgb(51, 51, 125);
+    padding: 20px 20px;
+    box-shadow: 1px 10px 20px #888888;
+    margin: 0px 100px 150px -100px;
+    height: 250px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.container-3{
+    display: block;
+    background-color: #eee;
+    color: rgb(51, 51, 125);
+    margin: -100px 100px 150px -100px;
+    height: 250px;
+    padding: 20px 20px;
+    box-shadow: 1px 10px 20px #888888;
+    text-align: left;
+    overflow: hidden;
+}
+
+
+.container-2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: block;
+}
+
+.container-3 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: block;
+}
+
+
+.container-2 .top-heading{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 0px 0px 10rem;
+    margin: -100px 0 0px 0px;
+}
+
+
+.container-2 .para-main{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(51, 51, 125);
+}
+
+.container-2 .top-para{
+    padding: 0px 100px 0px 150px;
+}
+
+.normaltext{
+    color:rgb(108, 108, 113);
+}
+
+.container-3 .para-main-1{
+    font-weight: bold;
+    color: rgb(51, 51, 125);
+    font-size: 20px;
+}
+
+.container-3 .top-para-1{
+    text-align: left;
+    padding: 0px 100px 0px 150px;
+}
+
+.container-3 .top-heading-1{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 0px 0px 10rem;
+    margin: -100px 0 0px 0px;
+}
+
+.para-all{
+    font-weight: 500;
+    color: rgb(51, 51, 125);
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+@media(max-width: 768px){
+     h1{
+        font-size: 20px;
+    }
+    .nav ul li{
+        display: block;
+    }
+    .nav{
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav ul{
+        padding: 30px;
+    }
+    aside{
+        position: relative;
+        height: 35vh;
+        width: 150px;
+    }
+    main
+    {
+        grid-column-start: span 4;
+        position: relative;
+        height: 20vh;
+        padding: 30px;
+    }
+}
